@@ -85,7 +85,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn joblib streamlit
 
 ### ▶️ Step 1: Train the Model
 ```bash
-python train_investment_model.py
+python model.py
 ```
 
 This will create:
@@ -94,7 +94,7 @@ This will create:
 
 ### ▶️ Step 2: Launch Streamlit Dashboard
 ```bash
-streamlit run ipl_fan_dashboard.py
+streamlit run app.py
 ```
 
 ### 🔁 Use the Dashboard to:
