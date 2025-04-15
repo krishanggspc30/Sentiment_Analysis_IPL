@@ -15,6 +15,22 @@ This project analyzes IPL fan sentiment data to predict team rankings and emotio
 
 ---
 
+## 📓 Jupyter Notebook Description
+
+The `sentiment_analysis.ipynb` notebook includes:
+- Loading and preprocessing IPL fan sentiment data from Excel.
+- Running sentiment scoring using VADER.
+- Visualizing favorite teams, age groups, and reactions to wins/losses.
+- Building a Random Forest model to predict emotional investment.
+- Exporting results to CSV for dashboard integration.
+
+### Example Cells:
+- **Code:** `import pandas as pd  # Load the Excel file xlsx_file = 'Cleaned_IPL_Dataset2.xlsx'  # Change this to your actual file name sheet_name = 0  # You can a...`
+- **Code:** `import pandas as pd import numpy as np import matplotlib.pyplot as plt import seaborn as sns  from vaderSentiment.vaderSentiment import SentimentInten...`
+- **Code:** `import pandas as pd from sklearn.model_selection import train_test_split from sklearn.preprocessing import LabelEncoder from sklearn.ensemble import R...`
+
+---
+
 ## 📁 Folder Structure
 
 ```
@@ -26,6 +42,7 @@ ipl-fan-sentiment-project/
 ├── predicted_team_rankings.png           # Bar chart of team rankings (optional)
 ├── train_investment_model.py             # Script to train the prediction model
 ├── ipl_fan_dashboard.py                  # Streamlit dashboard app
+├── sentiment_analysis.ipynb              # Jupyter notebook for sentiment workflow
 └── README.md                             # Project summary and instructions
 ```
 
@@ -68,7 +85,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn joblib streamlit
 
 ### ▶️ Step 1: Train the Model
 ```bash
-python model.py
+python train_investment_model.py
 ```
 
 This will create:
@@ -77,7 +94,7 @@ This will create:
 
 ### ▶️ Step 2: Launch Streamlit Dashboard
 ```bash
-streamlit run app.py
+streamlit run ipl_fan_dashboard.py
 ```
 
 ### 🔁 Use the Dashboard to:
@@ -91,6 +108,3 @@ streamlit run app.py
 - Integrate **live Twitter sentiment**  
 - Add **player-wise analysis**
 - Deploy dashboard using **Streamlit Cloud or Heroku**
-
----
-
