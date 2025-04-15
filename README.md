@@ -40,8 +40,8 @@ ipl-fan-sentiment-project/
 ├── investment_model.pkl                  # Trained RandomForestClassifier
 ├── label_encoders.pkl                    # Encoders for input transformation
 ├── predicted_team_rankings.png           # Bar chart of team rankings (optional)
-├── train_investment_model.py             # Script to train the prediction model
-├── ipl_fan_dashboard.py                  # Streamlit dashboard app
+├── model.py                              # Script to train the prediction model
+├── app.py                                # Streamlit dashboard app
 ├── sentiment_analysis.ipynb              # Jupyter notebook for sentiment workflow
 └── README.md                             # Project summary and instructions
 ```
